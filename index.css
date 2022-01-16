@@ -1,0 +1,43 @@
+p {
+  color: red;
+}
+
+li {
+  color: black;
+}
+
+#header {
+  text-align: center;
+  color: blue;
+}
+
+#card_area {
+  margin-top: 100px;
+}
+
+#draw {
+  margin-left: 300px;
+  display: none;
+}
+
+#deal {
+  margin-left: 100px;
+}
+
+#choose {
+  display: none;
+  text-align: center;
+  color: red;
+}
+
+#hand_list {
+  display: none;
+}
+
+#helper {
+  display: none;
+}
+
+#winnings {
+  color: red;
+}

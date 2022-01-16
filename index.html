@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>video poker</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="header">~~~~~50 Hand Video Poker~~~~~</h1>
+      <h3 id="choose"></h3>
+      <div class="row">
+        <div id="count_area" class="col-md-3">
+          <h4 id="royal_flush">Royal Flush</h4>
+          <h4 id="straight_flush">Straight Flush</h4>
+          <h4 id="four_kind">4 of a Kind</h4>
+          <h4 id="full_house">Full House</h4>
+          <h4 id="flush">Flush</h4>
+          <h4 id="straight">Straight</h4>
+          <h4 id="three_kind">3 of a Kind</h4>
+          <h4 id="two_pair">Two Pair</h4>
+          <h4 id="job">Jacks or better</h4>
+          <p id="nothing"></p>
+        </div>
+        <div id="card_area" class="col-md-9">
+          <h1 id="winnings"></h1>
+          <button id="claim" class="btn btn-danger">CLAIM</button>
+          <p id="helper">click cards to hold then press DRAW</p>
+          <div class="col-md-2">
+            <h1 id="card1"></h1>
+            <h3 id="hold1"></h3>
+          </div>
+          <div class="col-md-2">
+            <h1 id="card2"></h1>
+            <h3 id="hold2"></h3>
+          </div>
+          <div class="col-md-2">
+            <h1 id="card3"></h1>
+            <h3 id="hold3"></h3>
+          </div>
+          <div class="col-md-2">
+            <h1 id="card4"></h1>
+            <h3 id="hold4"></h3>
+          </div>
+          <div class="col-md-2">
+            <h1 id="card5"></h1>
+            <h3 id="hold5"></h3>
+          </div>
+        </div>
+      </div>
+      <h2 id="coins"></h2>
+      <button id="deal" class="btn btn-success">DEAL</button>
+      <button id="draw" class="btn btn-primary">DRAW</button><br>
+      <br>
+      <div id="hand_list"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
