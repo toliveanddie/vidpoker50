@@ -299,58 +299,58 @@ $('#draw').click(function() {
     ///////// start checking the hand values. if statements using functions above ////
     if (royal_flush(numbers1, suits1) == "true") {
       $('#royal_flush').show().css("color", "red");/// changes the values to red if hit
-      hand_holder = hand_holder + hand + " --Royal Flush<br>";//// updates list that appears below UI
+      hand_holder = hand_holder + hand + " --Royal Flush -- 250 coins won!<br>";//// updates list that appears below UI
       royal_flushes = royal_flushes + 1;/// adds counts for values
       total_won = total_won + 250;////  adds the values
       coins = coins + 250;/// adds the coins///////////////////  same as each else statement below //////////////
 
     } else if (straight_flush(numbers1, suits1) == "true") {               
-        hand_holder = hand_holder + hand + " --Straight Flush<br>";        
+        hand_holder = hand_holder + hand + " --Straight Flush -- 40 coins won!<br>";        
         $('#straight_flush').show().css("color", "red");                   
         straight_flushes = straight_flushes + 1;
         total_won = total_won + 40;
         coins = coins + 40;
 
     } else if (four_kind(numbers1) == "true") {
-        hand_holder = hand_holder + hand + " --4 of a kind<br>";
+        hand_holder = hand_holder + hand + " --4 of a kind -- 20 coins won!<br>";
         $('#four_kind').show().css("color", "red");
         four_kinds = four_kinds + 1;
         total_won = total_won + 20;
         coins = coins + 20;
 
     } else if (full_house(numbers1) == "true") {
-        hand_holder = hand_holder + hand + " --Full House <br>";
+        hand_holder = hand_holder + hand + " --Full House -- 9 coins won!<br>";
         $('#full_house').show().css("color", "red");
         full_houses = full_houses + 1;
         total_won = total_won + 9;
         coins = coins + 9;
       
     } else if (flush(suits1) == "true") {
-        hand_holder = hand_holder + hand + " --Flush<br>";
+        hand_holder = hand_holder + hand + " --Flush -- 6 coins won!<br>";
         $('#flush').show().css("color", "red");
         flushes = flushes + 1;
         total_won = total_won + 6;
         coins = coins + 6;
     } else if (straight(numbers1) == "true") {
-        hand_holder = hand_holder + hand + " --Straight<br>";
+        hand_holder = hand_holder + hand + " --Straight -- 5 coins won!<br>";
         $('#straight').show().css("color", "red");
         straights = straights + 1;
         total_won = total_won + 5;
         coins = coins + 5;
     } else if (three_kind(numbers1) == "true") {
-        hand_holder = hand_holder + hand + " --3 of a kind<br>";
+        hand_holder = hand_holder + hand + " --3 of a kind -- 3 coins won!<br>";
         $('#three_kind').show().css("color", "red");
         three_kinds = three_kinds + 1;
         total_won = total_won + 3;
         coins = coins + 3;
     } else if (two_pair(numbers1) == "true") {
-        hand_holder = hand_holder + hand + " --Two Pair<br>";
+        hand_holder = hand_holder + hand + " --Two Pair -- 2 coins won!<br>";
         $('#two_pair').show().css("color", "red");
         two_pairs = two_pairs + 1;
         total_won = total_won + 2;
         coins = coins + 2; 
     } else if (jacks_or_better(numbers1) == "true") {
-        hand_holder = hand_holder + hand + " --Jacks or better<br>";
+        hand_holder = hand_holder + hand + " --Jacks or better -- 1 coin won!<br>";
         $('#job').show().css("color", "red");
         pairs = pairs + 1;
         total_won = total_won + 1;
